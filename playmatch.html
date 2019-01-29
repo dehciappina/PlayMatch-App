@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Playmatch - Social App for Gamers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="scripts/playmatch_script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+    <style>
+        .loading_container {
+            position:fixed;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            background:linear-gradient(-120deg,#85008d, #452cff);
+            z-index: 2;
+            transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+            -webkit-transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+            -moz-transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+            -ms-transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+            -o-transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change:transform;
+        }
+
+        .loading_container p {
+            text-align: center;
+            color:white;
+            font-size:3.8vh;
+            font-weight: 300;
+        }
+
+        .loading_container div {
+            width: 27.4vh;
+            height: 27.4vh;
+            margin: 15vh auto;
+        }
+
+        .loading_container div div {
+            width: 70%;
+            height: 70%;
+            display: block;
+            margin: 15vh auto 5vh auto;
+            background-image: url(assets/playmatch/load_item.svg);
+            background-repeat: no-repeat;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: rotate_div 4s linear;
+            animation-iteration-count: 1;
+            -webkit-animation: rotate_div 4s linear;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+        }
+
+        @keyframes rotate_div {
+            0% {
+                transform: translateY(-50%) rotate(0deg);
+                -webkit-transform: translateY(-50%) rotate(0deg);
+                -moz-transform: translateY(-50%) rotate(0deg);
+                -ms-transform: translateY(-50%) rotate(0deg);
+                -o-transform: translateY(-50%) rotate(0deg);
+        }
+            100% {
+                transform:translateY(-50%) rotate(360deg);
+                -webkit-transform:translateY(-50%) rotate(360deg);
+                -moz-transform:translateY(-50%) rotate(360deg);
+                -ms-transform:translateY(-50%) rotate(360deg);
+                -o-transform:translateY(-50%) rotate(360deg);
+        }
+        }
+    </style>
+</head>
+<body class="playmatch_body">
+
+    <aside class="loading_container">
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>Buscando...</p>
+    </aside>
+
+    <section class="top_box top_box_playmatch">
+        <h3>Compatibilidade</h3>
+
+        <div class="skew_level"><p>Nível 8</p></div>
+        <p class="common_info">4 Jogos Favoritos em Comum!</p>
+
+        <img alt="">
+    </section>
+
+    <section class="info_box">
+        <p class="prof_name">Gabriella, 21</p>
+        <p class="sub_info">Curitiba - PR</p>
+    </section>
+
+    <h1>Jogos Favoritos</h1>
+
+    <section class="list_holder game_list fav_games">
+        <article>
+            <img src="assets/playmatch/skyrim.jpg" alt="">
+            <div class="in_common">
+                <p>The Elder Scrolls V: Skyrim</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/dmc3.jpg" alt="">
+            <div>
+                <p>Devil May Cry 3</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/hl2.jpg" alt="">
+            <div class="in_common">
+                <p>Half Life 2</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/okami.jpg" alt="">
+            <div>
+                <p>Okami</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/lol.jpg" alt="">
+            <div>
+                <p>League of Legends</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/ragnarok.jpg" alt="">
+            <div class="in_common">
+                <p>Ragnarok Online</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/pinata.jpg" alt="">
+            <div>
+                <p>Viva Piñata</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/mario_galaxy.jpg" alt="">
+            <div class="in_common">
+                <p>Super Mario Galaxy</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/candy.jpg" alt="">
+            <div>
+                <p>Candy Crush Soda Saga</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/bayonetta.jpg" alt="">
+            <div>
+                <p>Bayonetta</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/overwatch.jpg" alt="">
+            <div>
+                <p>Overwatch</p>
+            </div>
+        </article>
+    </section>
+    
+    <h1>Dispositivos</h1>
+
+    <section class="list_holder">
+        <article>
+            <img src="assets/playmatch/ps4.jpg" alt="">
+            <div class="in_common">
+                <p>Playstation 4</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/xbox.jpg" alt="">
+            <div>
+                <p>Xbox 360</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/windows.jpg" alt="">
+            <div class="in_common">
+                <p>Windows 10</p>
+            </div>
+        </article>
+    </section>
+
+    <h1>Jogos Recentes</h1>
+
+    
+    <section class="list_holder game_list">
+        <article>
+            <img src="assets/playmatch/rdr2.jpg" alt="">
+            <div>
+                <p>Red Dead Redemption 2</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/crash.jpg" alt="">
+            <div>
+                <p>Crash Bandicoot N. Sane Trilogy</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/hzd.jpg" alt="">
+            <div>
+                <p>Horizon Zero Dawn</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/storm4.jpg" alt="">
+            <div class="in_common">
+                <p>Naruto: Ultimate Ninja Storm 4</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/portal2.jpg" alt="">
+            <div>
+                <p>Portal 2</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/shadow_tomb_raider.jpg" alt="">
+            <div>
+                <p>Shadow of The Tomb Raider</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/overwatch.jpg" alt="">
+            <div class="in_common">
+                <p>Overwatch</p>
+            </div>
+        </article>
+    </section>
+
+
+    <h1>Gêneros Favoritos</h1>
+
+    <section class="list_holder fav_gens">
+        <article>
+            <img src="assets/playmatch/fps.jpg" alt="">
+        </article>
+        <article  class="in_common">
+            <img src="assets/playmatch/rpg.jpg" alt="">
+        </article>
+        <article  class="in_common">
+            <img src="assets/playmatch/aventura.jpg" alt="">
+        </article>
+        <article>
+            <img src="assets/playmatch/survival_horror.jpg" alt="">
+        </article>
+    </section>
+
+    <h1>IDs</h1>
+
+    <section class="list_holder fav_games">
+        <article>
+            <img src="assets/playmatch/ps4.jpg" alt="">
+            <div class="in_common">
+                <p>Playstation Network (SOLICITAR)</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/xbox.jpg" alt="">
+            <div>
+                <p>Xbox Live (SOLICITAR)</p>
+            </div>
+        </article>
+        <article>
+            <img src="assets/playmatch/steam.jpg" alt="">
+            <div class="in_common">
+                <p>Steam (gab_ri3ll4)</p>
+            </div>
+        </article>
+    </section>
+
+    <img class="down_bts" src="assets/playmatch/down_bts.svg" alt="">
+
+    <nav>
+        <img class="bar" src="assets/footer/footer_bar.jpg" alt="">
+
+        <a href="index.html">
+            <img src="assets/footer/profile.svg" alt="">
+        </a>
+        <a href="playmatch.html" style="filter:brightness(0.4)">
+            <img src="assets/footer/playmatch.svg" alt="">
+        </a>
+        <a href="party.html">
+            <img src="assets/footer/party.svg" alt="">
+        </a>
+        <a href="#">
+            <img src="assets/footer/connections.svg" alt="">
+        </a>
+    </nav>
+</body>
+</html>

@@ -21,7 +21,23 @@ function toggleSearch() {
     } else {
         setTimeout(function() {
             document.querySelector('.party_forming').classList.toggle('show_forming_party')
-        }, 1300)
+
+            setTimeout(function() {
+                document.querySelector('.user1').style.transform = "scale(1)"
+
+                setTimeout(function() {
+                    document.querySelector('.user2').style.transform = "scale(1)"
+                    
+                    setTimeout(function() {
+                        document.querySelector('.searching_user').style.transform = "scale(1)"
+                            document.querySelector('.user_lines').style.transform = "scale(1)"
+                            document.querySelector('.user_lines').style.opacity = 1
+                        
+                    }, 600)
+                }, 600)
+            }, 600)
+        }, 1200)
+
     }
 }
 

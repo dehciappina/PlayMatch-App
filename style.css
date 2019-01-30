@@ -290,7 +290,7 @@ h1 {
     box-sizing: border-box;
     font-size: 2.8vh;
     font-family: 'Roboto', sans-serif;
-    font-weight: 200;
+    /* font-weight: 200; */
 }
 
 .party_input_div div p {
@@ -473,4 +473,5 @@ h1 {
 .bokeh_bg {
     position: absolute;
     width: 100%;
+    z-index: -1;
 }

@@ -324,7 +324,7 @@ h1 {
 .big_prof_img {
     display: block;
     margin: 0 auto;
-    width: calc(25vw + 20vh);
+    width: 55vw;
     transition:transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-transition:transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
     -moz-transition:transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -342,7 +342,7 @@ h1 {
 }
 
 #party_form {
-    padding-bottom: calc(15vh - 15vw);
+    padding-bottom: calc(25vh - 25vw);
     padding-top: 4vh;
     transition:transform 1s ease, opacity 1s ease;
     -webkit-transition:transform 1s ease, opacity 1s ease;
@@ -364,7 +364,7 @@ h1 {
     top:0;
     right:0;
     left:0;
-    bottom:10vh;
+    bottom:15vw;
     opacity:0;
     visibility: hidden;
     transition:opacity 1s ease;
@@ -377,11 +377,6 @@ h1 {
 .show_forming_party {
     opacity:1;
     visibility: visible;
-    transition:opacity 0 ease;
-    -webkit-transition:opacity 0 ease;
-    -moz-transition:opacity 0 ease;
-    -ms-transition:opacity 0 ease;
-    -o-transition:opacity 0 ease;
 }
 
 .abandon_party {
@@ -457,13 +452,13 @@ h1 {
 }
 .searching_user {
     bottom: 0;
-    right: 3%;
+    right: 6%;
 }
 
 .user_lines {
     position: absolute;
     bottom: 7%;
-    width: 75%;
+    width: 65%;
     left: 16%;
     max-width: 50vh;
 }

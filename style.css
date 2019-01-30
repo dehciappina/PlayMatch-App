@@ -280,6 +280,7 @@ h1 {
     color: white;
     margin-bottom: 0.5vh;
     letter-spacing: 0.2vh;
+    font-size: 3.8vw;
 }
 .party_input_div div {
     background: rgba(255,255,255,0.15);
@@ -341,7 +342,7 @@ h1 {
 }
 
 #party_form {
-    padding-bottom: calc(25vh - 25vw);
+    padding-bottom: calc(15vh - 15vw);
     padding-top: 4vh;
     transition:transform 1s ease, opacity 1s ease;
     -webkit-transition:transform 1s ease, opacity 1s ease;

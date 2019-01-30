@@ -70,8 +70,7 @@ h3 {
 
 .skew_level{
     display: inline-block;
-    width: 38vw;
-    max-width: 23.7vh;
+    width: 38%;
     background: #06F;
     color: white;
     text-align: center;
@@ -443,6 +442,12 @@ h1 {
     position: absolute;
     height: 37vw;
     max-height: 25vh;
+    transform: scale(0);
+    transition:0.6s ease-in-out;
+    -webkit-transition:0.6s ease-in-out;
+    -moz-transition:0.6s ease-in-out;
+    -ms-transition:0.6s ease-in-out;
+    -o-transition:0.6s ease-in-out;
 }
 .user1 {
     left: 3vw;
@@ -463,6 +468,18 @@ h1 {
     width: 65%;
     left: 16%;
     max-width: 50vh;
+    transform-origin: bottom left;
+    opacity:0;
+    transform:scale(0);
+    -webkit-transform:scale(0);
+    -moz-transform:scale(0);
+    -ms-transform:scale(0);
+    -o-transform:scale(0);
+    transition:1s ease-in-out;
+    -webkit-transition:1s ease-in-out;
+    -moz-transition:1s ease-in-out;
+    -ms-transition:1s ease-in-out;
+    -o-transition:1s ease-in-out;
 }
 
 .bokeh_bg {

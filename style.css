@@ -71,6 +71,7 @@ h3 {
 .skew_level{
     display: inline-block;
     width: 38vw;
+    max-width: 23.7vh;
     background: #06F;
     color: white;
     text-align: center;
@@ -267,7 +268,7 @@ h1 {
     margin: 0 3vw 0 0;
 }
 .party_title h2 {
-    font-size: calc(3vw + 0.5vh);
+    font-size: 15px;
     color: white;
     font-weight: 300;
     transform: translateY(20%);
@@ -280,7 +281,7 @@ h1 {
     color: white;
     margin-bottom: 0.5vh;
     letter-spacing: 0.2vh;
-    font-size: 3.8vw;
+    font-size: 2vh;
 }
 .party_input_div div {
     background: rgba(255,255,255,0.15);
@@ -325,6 +326,7 @@ h1 {
     display: block;
     margin: 0 auto;
     width: 55vw;
+    max-width: 80%;
     transition:transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-transition:transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
     -moz-transition:transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -467,4 +469,6 @@ h1 {
     position: absolute;
     width: 100%;
     z-index: -1;
+    left: 0;
+    right: 0;
 }

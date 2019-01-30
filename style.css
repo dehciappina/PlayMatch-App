@@ -14,7 +14,7 @@ input:focus {
 }
 
 .party_body {
-    overflow-y: hidden;
+    overflow: hidden;
     height: 100vh;
 }
 
@@ -267,14 +267,14 @@ h1 {
     margin: 0 3vw 0 0;
 }
 .party_title h2 {
-    font-size: 2.3vh;
+    font-size: calc(3vw + 0.5vh);
     color: white;
     font-weight: 300;
     transform: translateY(20%);
 }
 .party_input_div {
     width:80%;
-    margin: 0 auto 1.5vh auto;
+    margin: 0 auto 2.5vh auto;
 }
 .party_input_div span {
     color: white;
@@ -282,8 +282,8 @@ h1 {
     letter-spacing: 0.2vh;
 }
 .party_input_div div {
-    border: none;
-    background: rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.15);
+    border-top: 0.3vh solid white;
     height: 5.5vh;
     color: white;
     padding-left: 8%;
@@ -321,13 +321,9 @@ h1 {
 }
 
 .big_prof_img {
-    position: absolute;
-    bottom: 3vw;
-    right: 0;
-    left: 0;
     display: block;
     margin: 0 auto;
-    width: 38vh;
+    width: calc(25vw + 20vh);
     transition:transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-transition:transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
     -moz-transition:transform 1.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -345,6 +341,7 @@ h1 {
 }
 
 #party_form {
+    padding-bottom: calc(25vh - 25vw);
     padding-top: 4vh;
     transition:transform 1s ease, opacity 1s ease;
     -webkit-transition:transform 1s ease, opacity 1s ease;
@@ -354,11 +351,11 @@ h1 {
 }
 
 .translateX1 {
-    transform:translateX(-50%);
-    -webkit-transform:translateX(-50%);
-    -moz-transform:translateX(-50%);
-    -ms-transform:translateX(-50%);
-    -o-transform:translateX(-50%);
+    transform:translateX(-30vw);
+    -webkit-transform:translateX(-30vw);
+    -moz-transform:translateX(-30vw);
+    -ms-transform:translateX(-30vw);
+    -o-transform:translateX(-30vw);
 }
 
 .party_forming {
@@ -424,8 +421,8 @@ h1 {
 }
 
 .forming_party_info span {
-    font-size: 2.2vh;
-    letter-spacing: 0.4vh;
+    font-size: 3.5vw;
+    letter-spacing: 1vw;
     font-weight: 300;
 }
 

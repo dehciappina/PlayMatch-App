@@ -35,7 +35,7 @@ document.querySelector('.prof_name').innerText = nameList[Math.floor(Math.random
 
 
 const placeList = [
-    'São Paulo - SP', 'Curitiba - PR', 'Rio de Janeiro - RJ', 'Florianópolis - SC', 'Salvador - BA', 'Rio Branco - AC', 'Manaus - AM'
+    'São Paulo, SP - 15km', 'Curitiba, PR - 235km', 'Rio de Janeiro, RJ - 150km', 'Florianópolis, SC - 360km', 'Salvador, BA - 552km', 'Rio Branco, AC - 948km', 'Manaus, AM - 838km'
 ];
 
 document.querySelector('.sub_info').innerText = placeList[Math.floor(Math.random() * 6)]
@@ -45,3 +45,16 @@ const imgList = [
 ]
 
 document.querySelector('.top_box > img').setAttribute('src', 'assets/playmatch/' + imgList[Math.floor(Math.random() * 10)])
+
+const descriptionList = [
+    'bora dar uns headshots?',
+    'Não sou o Nathan Drake, mas tô aqui à procura de um tesouro',
+    '#JogoDeFutebolNão #please',
+    'Me chama pra jogar um MMO vai',
+    'Troco um dos meus por Watch Dogs 2 #paz',
+    'Amigos eu já tenho, o que falta é um(a) rival pra jogar Naruto UNS4',
+    'Sou uma pessoa tímida até a primeira partida, depois tem que aguentar.',
+    'Óculos VR: CONFERE. Montanha de jogos: CONFERE. Amigos pra jogar: CADÊ?'
+]
+
+document.querySelector('.prof_description').innerText = descriptionList[Math.floor(Math.random() * 8)]

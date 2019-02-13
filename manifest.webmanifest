@@ -1,0 +1,21 @@
+{
+    "short_name": "Playmatch",
+    "name": "Playmatch - Conheça Jogadores",
+    "icons": [
+      {
+        "src": "/assets/icons-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/assets/icons-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/maps/?source=pwa",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/maps/",
+    "theme_color": "#000000"
+  }

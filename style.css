@@ -3,6 +3,7 @@ body {
     overflow-x: hidden;
     max-width: 65vh;
     margin: 0 auto;
+    position: relative;
 }
 
 input:focus {
@@ -40,6 +41,15 @@ nav {
     display: flex;
     z-index: 2;
     max-width: 65vh;
+}
+
+.prof_description {
+    color: white;
+    text-align: center;
+    font-size: 2.8vh;
+    width: 90%;
+    margin: 3vh auto 0 auto;
+    font-weight: 300;
 }
 
 .bar {
@@ -118,6 +128,8 @@ h3 {
 .top_box_profile > img {
     top: 12%;
     height: 130%;
+    max-width: 90%;
+    object-fit: contain;
 }
 
 .top_box > img {
@@ -157,15 +169,15 @@ h1 {
     text-align: center;
     margin: 4vh 0 2vh 0;
     font-weight: 400;
-    font-size: 4vh;
+    font-size: 3.8vh;
 }
 
 .game_list {
-    height: 40vh;
+    height: 38vh;
 }
 
 .list_holder:not(.game_list) {
-    height: 30vh;
+    height: 27.4vh;
 }
 
 .list_holder {
@@ -180,7 +192,7 @@ h1 {
 .list_holder article {
     height: 100%;
     width: 30vh;
-    min-width: 30vh;
+    min-width: 27.4vh;
     margin-right: 3vh;
     display: inline-block;
     position: relative;
@@ -232,11 +244,11 @@ h1 {
     position: absolute;
     width: 3.8vh;
     height: 3.8vh;
-    transform: translateY(20%) translateX(40%);
-    -webkit-transform: translateY(20%) translateX(40%);
-    -moz-transform: translateY(20%) translateX(40%);
-    -ms-transform: translateY(20%) translateX(40%);
-    -o-transform: translateY(20%) translateX(40%);
+    transform: translateY(40%) translateX(40%);
+    -webkit-transform: translateY(40%) translateX(40%);
+    -moz-transform: translateY(40%) translateX(40%);
+    -ms-transform: translateY(40%) translateX(40%);
+    -o-transform: translateY(40%) translateX(40%);
     background-repeat: no-repeat;
 }
 

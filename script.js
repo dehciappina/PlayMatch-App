@@ -1,4 +1,4 @@
 if ('serviceWorker' in navigator) {
     console.log("SERVICEWORKER NO NAVEGADOR")
-    navigator.serviceWorker.register('service-worker.js');
+    navigator.serviceWorker.register('./sw.js');
 }

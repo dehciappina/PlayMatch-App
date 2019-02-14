@@ -10,65 +10,6 @@
     <script src="scripts/party_script.js" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     
-    <style>
-        .loading_container {
-            z-index: 2;
-            transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
-            -webkit-transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
-            -moz-transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
-            -ms-transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
-            -o-transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
-            will-change:transform;
-        }
-
-        .loading_container p {
-            text-align: center;
-            color:white;
-            font-size:3.8vh;
-            font-weight: 300;
-        }
-
-        .loading_container div {
-            width: 30vw;
-            height: 30vw;
-            border-radius: 100%;
-            background: #CCC;
-        }
-
-        .loading_container div div {
-            width: 70%;
-            height: 70%;
-            display: block;
-            margin: 0 auto;
-            background-image: url(assets/playmatch/load_item.svg);
-            background-repeat: no-repeat;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            animation: rotate_div 4s linear infinite;
-            -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            -o-transform: translateY(-50%);
-        }
-
-        @keyframes rotate_div {
-            0% {
-                transform: translateY(-50%) rotate(0deg);
-                -webkit-transform: translateY(-50%) rotate(0deg);
-                -moz-transform: translateY(-50%) rotate(0deg);
-                -ms-transform: translateY(-50%) rotate(0deg);
-                -o-transform: translateY(-50%) rotate(0deg);
-        }
-            100% {
-                transform:translateY(-50%) rotate(360deg);
-                -webkit-transform:translateY(-50%) rotate(360deg);
-                -moz-transform:translateY(-50%) rotate(360deg);
-                -ms-transform:translateY(-50%) rotate(360deg);
-                -o-transform:translateY(-50%) rotate(360deg);
-        }
-        }
-    </style>
 </head>
 <body class="party_body">
     <img src="assets/party/bokeh.png" class="bokeh_bg">
@@ -127,7 +68,7 @@
         <img src="assets/party/user1.png" class="user1">
         <img src="assets/party/user2.png" class="user2">
         <div class="searching_user">
-            <aside class="loading_container">
+            <aside class="party_loading_container">
                     <div>
                         <div>
                             <div>

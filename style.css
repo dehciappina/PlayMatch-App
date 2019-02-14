@@ -19,7 +19,7 @@ input:focus {
     height: 100vh;
 }
 
-.profile_body, .party_body {
+.profile_body, .party_body, .loading_container {
     background:linear-gradient(-120deg, #483DFF, #3C0044) fixed;
 }
 
@@ -115,6 +115,8 @@ h3 {
 
 .top_box_playmatch {
     height: 38vh;
+    background-image: url(assets/hive_bg.svg);
+    background-size: calc(100%/7);
 }
 
 .top_box_profile {
@@ -503,4 +505,194 @@ h1 {
     z-index: -1;
     left: 0;
     right: 0;
+}
+
+
+
+
+/* PLAYMATCH */
+
+
+.loading_container {
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: 2;
+    transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change:transform;
+}
+
+.loading_container p {
+    text-align: center;
+    color:white;
+    font-size:3.8vh;
+    font-weight: 300;
+}
+
+.loading_container div {
+    width: 27.4vh;
+    height: 27.4vh;
+    margin: 15vh auto;
+}
+
+.loading_container div div {
+    width: 70%;
+    height: 70%;
+    display: block;
+    margin: 15vh auto 5vh auto;
+    background-image: url(assets/playmatch/load_item.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: rotate_div 4s linear;
+    animation-iteration-count: 1;
+    -webkit-animation: rotate_div 4s linear;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+@keyframes rotate_div {
+    0% {
+        transform: translateY(-50%) rotate(0deg);
+        -webkit-transform: translateY(-50%) rotate(0deg);
+        -moz-transform: translateY(-50%) rotate(0deg);
+        -ms-transform: translateY(-50%) rotate(0deg);
+        -o-transform: translateY(-50%) rotate(0deg);
+}
+    100% {
+        transform:translateY(-50%) rotate(360deg);
+        -webkit-transform:translateY(-50%) rotate(360deg);
+        -moz-transform:translateY(-50%) rotate(360deg);
+        -ms-transform:translateY(-50%) rotate(360deg);
+        -o-transform:translateY(-50%) rotate(360deg);
+}
+}
+
+
+
+
+
+
+/* MAPA */
+
+
+
+.gmaps_bars_iframe, .gmaps_shopping_iframe {
+    height: 72vh;
+    width: 100%;
+    position: relative;
+}
+
+.gmaps_shopping_iframe {
+    display: none;
+}
+
+.top_div {
+    height: 12vh;
+    background: #333;
+    width: 100%;
+    padding: 0 8vw;
+    box-sizing: border-box;
+}
+
+.top_div p {
+    text-align: center;
+    font-size: 3vh;
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 300;
+}
+
+.bares, .lojas {
+    width:50%;
+    height:7.4vh;
+    background: #888;
+}
+
+.choosen {
+    background: #AAA;
+    border-bottom: 0.6vh solid #fff;
+    box-sizing: border-box;
+}
+
+.bares p, .lojas p {
+    font-size: 5vw;
+    color:white;
+    text-align: center;
+    line-height: 7.4vh;
+}
+
+
+
+
+/* PARTY */
+
+
+.party_loading_container {
+    z-index: 2;
+    transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change:transform;
+}
+
+.party_loading_container p {
+    text-align: center;
+    color:white;
+    font-size:3.8vh;
+    font-weight: 300;
+}
+
+.party_loading_container div {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 100%;
+    background: #CCC;
+}
+
+.party_loading_container div div {
+    width: 70%;
+    height: 70%;
+    display: block;
+    margin: 0 auto;
+    background-image: url(assets/playmatch/load_item.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: rotate_div 4s linear infinite;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+@keyframes rotate_div {
+    0% {
+        transform: translateY(-50%) rotate(0deg);
+        -webkit-transform: translateY(-50%) rotate(0deg);
+        -moz-transform: translateY(-50%) rotate(0deg);
+        -ms-transform: translateY(-50%) rotate(0deg);
+        -o-transform: translateY(-50%) rotate(0deg);
+}
+    100% {
+        transform:translateY(-50%) rotate(360deg);
+        -webkit-transform:translateY(-50%) rotate(360deg);
+        -moz-transform:translateY(-50%) rotate(360deg);
+        -ms-transform:translateY(-50%) rotate(360deg);
+        -o-transform:translateY(-50%) rotate(360deg);
+}
 }

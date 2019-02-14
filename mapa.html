@@ -7,12 +7,55 @@
         <title>Playmatch - Social App for Gamers</title>
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
+        <script src="scripts/mapa_script.js" defer></script>
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 
         <style>
-            .gmaps_iframe {
-                height: 91.5vh;
+            .gmaps_bars_iframe, .gmaps_shopping_iframe {
+                height: 72vh;
                 width: 100%;
+                position: relative;
+            }
+
+            .gmaps_shopping_iframe {
+                display: none;
+            }
+
+            .top_div {
+                height: 12vh;
+                background: #333;
+                width: 100%;
+                padding: 0 8vw;
+                box-sizing: border-box;
+            }
+
+            .top_div p {
+                text-align: center;
+                font-size: 3vh;
+                color: white;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                font-weight: 300;
+            }
+
+            .bares, .lojas {
+                width:50%;
+                height:7.4vh;
+                background: #888;
+            }
+
+            .choosen {
+                background: #AAA;
+                border-bottom: 0.6vh solid #fff;
+                box-sizing: border-box;
+            }
+
+            .bares p, .lojas p {
+                font-size: 5vw;
+                color:white;
+                text-align: center;
+                line-height: 7.4vh;
             }
         </style>
 
@@ -23,8 +66,22 @@
     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCGlT-tidXNuUqMrC266owKkpSD3qduNfM
         &q=bares+de+jogos" allowfullscreen></iframe> -->
 
-        <iframe class="gmaps_iframe" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d258952.42227862286!2d-46.81519811821767!3d-23.563692536349954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgames+bar!5e0!3m2!1spt-BR!2sbr!4v1550164913604" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="top_div">
+        <p>Encontre os melhores lugares gamer da sua região</p>
+    </div>
+
+    <div class="hor_flex">
+        <div class="bares choosen">
+            <p>Bares & Eventos</p>
+        </div>
+        <div class="lojas">
+            <p>Shopping</p>
+        </div>
+    </div>
+
+        <iframe class="gmaps_bars_iframe" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d133301.78170704405!2d-46.68918849509941!3d-23.532716330562657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbares+de+jogos!5e0!3m2!1spt-BR!2sbr!4v1550171966583" frameborder="0" style="border:0" allowfullscreen></iframe>
         
+        <iframe class="gmaps_shopping_iframe" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d160771.88391446593!2d-46.761420681231094!3d-23.579607540879536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1slojas+de+jogos+em+s%C3%A3o+paulo!5e0!3m2!1spt-BR!2sbr!4v1550171675312" frameborder="0" style="border:0" allowfullscreen></iframe>
     <nav>
         <img class="bar" src="assets/footer/footer_bar.jpg" alt="">
 

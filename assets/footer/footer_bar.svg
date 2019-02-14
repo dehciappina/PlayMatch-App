@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg enable-background="new 0 0 144.8 2.9" version="1.1" viewBox="0 0 140 2.9" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+	.st0{fill:url(#a);}
+	.st1{opacity:0.1;fill:#FFFFFF;}
+	.st2{opacity:0.2;fill:#FFFFFF;}
+	.st3{opacity:0.3;fill:#FFFFFF;}
+	.st4{opacity:0.4;fill:#FFFFFF;}
+	.st5{opacity:0.5;fill:#FFFFFF;}
+</style>
+		<linearGradient id="a" x1="-.5933" x2="144.17" y1="1.4671" y2="1.4671" gradientTransform="matrix(1 -.00085447 .00085447 1 .5921 .06286)" gradientUnits="userSpaceOnUse">
+		<stop stop-color="#63AC29" offset="0"/>
+		<stop stop-color="#5392FA" offset=".25"/>
+		<stop stop-color="#9F2899" offset=".5"/>
+		<stop stop-color="#D90129" offset=".75"/>
+		<stop stop-color="#E9AA28" offset="1"/>
+	</linearGradient>
+	<rect class="st0" width="144.8" height="2.9"/>
+	<polygon class="st1" points="115.8 0 144.8 0 144.8 2.9 115.8 2.9"/>
+	<rect class="st2" transform="matrix(-1 -1.2246e-16 1.2246e-16 -1 202.67 2.9202)" x="86.9" width="29" height="3"/>
+	<rect class="st3" transform="matrix(-1 -1.2246e-16 1.2246e-16 -1 144.76 2.945)" x="57.9" width="29" height="2.9"/>
+	<rect class="st4" transform="matrix(-1 -1.2246e-16 1.2246e-16 -1 86.861 2.945)" x="29" width="29" height="2.9"/>
+	<rect class="st5" transform="matrix(-1 -1.2246e-16 1.2246e-16 -1 28.958 2.945)" width="29" height="2.9"/>
+</svg>

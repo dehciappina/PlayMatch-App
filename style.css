@@ -262,6 +262,9 @@ h1 {
 
 .hor_flex {
     display: flex;
+}
+
+.width80 {
     width: 80%;
 }
 

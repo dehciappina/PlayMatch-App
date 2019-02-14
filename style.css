@@ -20,7 +20,7 @@ input:focus {
 }
 
 .profile_body, .party_body {
-    background:linear-gradient(-60deg,#85008d, #452cff) fixed;
+    background:linear-gradient(-120deg, #483DFF, #3C0044) fixed;
 }
 
 .profile_body, .playmatch_body {
@@ -46,7 +46,7 @@ nav {
 .prof_description {
     color: white;
     text-align: center;
-    font-size: 2.8vh;
+    font-size: 5vw;
     width: 90%;
     margin: 3vh auto 0 auto;
     font-weight: 300;

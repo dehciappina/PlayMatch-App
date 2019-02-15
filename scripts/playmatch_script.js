@@ -15,17 +15,17 @@ document.querySelector('.down_bts').addEventListener('click', function() {
 
 
 const backgroundList = [
-    'linear-gradient(-120deg, #ff876d, #ff384f) fixed',
-    'linear-gradient(-120deg, #00c68d, #00afff) fixed',
-    'linear-gradient(-120deg, #85008d, #452cff) fixed',
+    'linear-gradient(-120deg, #FFD56D, #FF142B) fixed',
+    'linear-gradient(-120deg, #00F58D, #0088D8) fixed',
     'linear-gradient(-120deg, #ff6a00, #edd214) fixed',
     'linear-gradient(-120deg, #000000, #333333) fixed',
-    'linear-gradient(-120deg, #FF0, #F00) fixed'];
+    'linear-gradient(-120deg, #CC0, #E00) fixed',
+    'linear-gradient(-120deg, #483DFF, #3C0044) fixed'];
 
 document.body.style.background = backgroundList[Math.floor(Math.random() * 6)]
 
 const nameList = [
-    'Yuri', 'Ale', 'Ariel', 'Frankie', 'Alison', 'Maciel', 'Charlie', 'Kim', 'Joan', 'Cacá', 'Chris', 'Ellis'
+    'Yuri', 'Alê', 'Ariel', 'Frankie', 'Alison', 'Sam', 'Charlie', 'Kim', 'Joan', 'Cacá', 'Chris', 'Ellis'
 ];
 const ageList = [
     '21', '19', '17', '23', '25', '18', '27'
@@ -48,7 +48,7 @@ document.querySelector('.top_box > img').setAttribute('src', 'assets/playmatch/'
 
 const descriptionList = [
     'bora dar uns headshots?',
-    'Não sou o Nathan Drake, mas tô aqui à procura de um tesouro',
+    'Não sou o Nathan Drake, mas tô aqui à procura de um tesouro ;)',
     '#JogoDeFutebolNão #please',
     'Me chama pra jogar um MMO vai',
     'Troco um dos meus por Watch Dogs 2 #paz',

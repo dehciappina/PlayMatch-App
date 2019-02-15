@@ -230,8 +230,9 @@ h1 {
     right: 0;
     top: 0;
     height: 1vh;
-    background-image: url(assets/footer/footer_bar.jpg);
+    background-image: url(assets/footer/footer_bar.svg);
     background-size: contain;
+    transform: translateY(-90%);
 }
 
 .down_bts {
@@ -598,7 +599,7 @@ h1 {
 
 .top_div {
     height: 12vh;
-    background: #333;
+    background: linear-gradient(-60deg, #483DFF, #3C0044);
     width: 100%;
     padding: 0 8vw;
     box-sizing: border-box;

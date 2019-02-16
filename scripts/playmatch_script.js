@@ -49,12 +49,14 @@ document.querySelector('.top_box > img').setAttribute('src', 'assets/playmatch/'
 const descriptionList = [
     'bora dar uns headshots?',
     'Não sou o Nathan Drake, mas tô aqui à procura de um tesouro ;)',
-    '#JogoDeFutebolNão #please',
+    '#JogoDeFutebolNão #pls',
     'Me chama pra jogar um MMO vai',
     'Troco um dos meus por Watch Dogs 2 #paz',
     'Amigos eu já tenho, o que falta é um(a) rival pra jogar Naruto UNS4',
     'Sou uma pessoa tímida até a primeira partida, depois tem que aguentar.',
-    'Óculos VR: CONFERE. Montanha de jogos: CONFERE. Amigos pra jogar: CADÊ?'
+    'Óculos VR: CONFERE. Montanha de jogos: CONFERE. Amigos pra jogar: CADÊ?',
+    'Me chama pra tomar uma e jogar Mortal Kombat :)',
+    'Procura-se suporte pra um LoLzinho #tanque'
 ]
 
-document.querySelector('.prof_description').innerText = descriptionList[Math.floor(Math.random() * 8)]
+document.querySelector('.prof_description').innerText = descriptionList[Math.floor(Math.random() * 10)]

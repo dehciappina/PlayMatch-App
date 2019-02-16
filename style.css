@@ -35,7 +35,7 @@ p, h1, h2, h3, h4, h5 {
 nav {
     position: fixed;
     left: auto;
-    height: 7.5vh;
+    height: 8vh;
     background: #111;
     bottom: 0;
     display: flex;
@@ -55,8 +55,9 @@ nav {
 .bar {
     width: 100%;
     display: block;
-    transform: translateY(-90%);
+    /* transform: translateY(-90%); */
     position: absolute;
+    height: 1vh;
 }
 
 nav a {
@@ -64,11 +65,11 @@ nav a {
 }
 
 nav a img {
-    height: 60%;
-    margin: 0 auto;
+    height: 50%;
     display: block;
     position: relative;
-    top: 20%;
+    top: 30%;
+    width: 100%;
 }
 
 h3 {

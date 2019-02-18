@@ -23,7 +23,7 @@ input:focus {
     background:linear-gradient(-120deg, #483DFF, #3C0044) fixed;
 }
 
-.profile_body, .playmatch_body {
+.profile_body, .playmatch_body, .connections_body {
     padding-bottom: 10vh;
 }
 

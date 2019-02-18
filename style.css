@@ -19,7 +19,7 @@ input:focus {
     height: 100vh;
 }
 
-.profile_body, .party_body, .loading_container {
+.profile_body, .party_body, .loading_container, .map_body {
     background:linear-gradient(-120deg, #483DFF, #3C0044) fixed;
 }
 
@@ -179,13 +179,26 @@ h1 {
     height: 38vh;
 }
 
-.list_holder:not(.game_list) {
+.playmatch_body .list_holder:not(.game_list), .profile_body .list_holder:not(.game_list) {
     height: 27.4vh;
+}
+
+.playmatch_body .list_holder, .profile_body .list_holder {
+    background: rgba(255,255,255,0.2);
+}
+
+.playmatch_body .list_holder article, .profile_body .list_holder article {
+    width: 30vh;
+    min-width: 27.4vh;
+}
+
+.playmatch_body .list_holder article div, .profile_body .list_holder article div {
+    font-size: 3vh;
+    padding: 2vh 1vh;
 }
 
 .list_holder {
     width: 100%;
-    background: rgba(255,255,255,0.2);
     overflow-x: scroll;
     padding-left: calc(50% - 15vh);
     box-sizing: border-box;
@@ -194,8 +207,6 @@ h1 {
 
 .list_holder article {
     height: 100%;
-    width: 30vh;
-    min-width: 27.4vh;
     margin-right: 3vh;
     display: inline-block;
     position: relative;
@@ -213,16 +224,11 @@ h1 {
     bottom: 0;
     width: 100%;
     background: rgba(0,0,0,0.8);
-    font-size: 3vh;
     color: white;
     text-align: center;
-    padding: 2vh 1vh;
     box-sizing: border-box;
 }
 
-.in_common {
-
-}
 
 .in_common::after {
     content: "";
@@ -237,8 +243,7 @@ h1 {
 }
 
 .down_bts {
-    width: 80%;
-    max-height: 25vh;
+    /* width: 38%; */
     display: block;
     margin: 8vh auto;
 }
@@ -599,11 +604,16 @@ h1 {
 }
 
 .top_div {
-    height: 12vh;
-    background: linear-gradient(-60deg, #483DFF, #3C0044);
+    background: #111;
     width: 100%;
-    padding: 0 8vw;
     box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.map_top_div {
+    height: 12vh;
 }
 
 .top_div p {
@@ -614,17 +624,19 @@ h1 {
     top: 50%;
     transform: translateY(-50%);
     font-weight: 300;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .bares, .lojas {
     width:50%;
     height:7.4vh;
-    background: #888;
+    background: #1F1F1F;
 }
 
 .choosen {
-    background: #AAA;
-    border-bottom: 0.6vh solid #fff;
+    background: #444;
+    border-bottom: 1vh solid #222;
     box-sizing: border-box;
 }
 
@@ -634,7 +646,6 @@ h1 {
     text-align: center;
     line-height: 7.4vh;
 }
-
 
 
 
@@ -697,4 +708,108 @@ h1 {
         -ms-transform:translateY(-50%) rotate(360deg);
         -o-transform:translateY(-50%) rotate(360deg);
 }
+}
+
+
+/* CONNECTIONS */
+
+.connections .left_container {
+    width:38%;
+}
+
+.connections .right_container {
+    width:62%;
+}
+.connections_top_div {
+    height: 7.5vh;
+}
+
+.connections_top_div a {
+    width:calc(100%/3)
+}
+
+.connections_top_div a img {
+    height: 50%;
+    width: 100%;
+    position: relative;
+    top: 25%;
+}
+.connections_top_div a:nth-child(2) {
+    background: #333;
+}
+
+.connections > article {
+    width: 100%;
+    height: 23.6vh;
+    margin: 3vh 0;
+    position: relative;
+}
+
+.right_container > div {
+    background: #eee;
+    width: 100%;
+    height: 80%;
+    border-radius: 0 0 0 2vh;
+    -webkit-border-radius: 0 0 0 2vh;
+    -moz-border-radius: 0 0 0 2vh;
+    -ms-border-radius: 0 0 0 2vh;
+    -o-border-radius: 0 0 0 2vh;
+}
+
+.right_container > span {
+    height: 20%;
+    display: block;
+    font-size: 3.8vh;
+    margin: 0.5vh 0;
+}
+
+.color_bar {
+    width: 100%;
+    height: 0.6vh;
+    position: absolute;
+    top: 5.4vh;
+}
+
+.color_bar1 {
+    background:linear-gradient(-120deg, #00f58d, #0088d8);
+}
+
+.color_bar2 {
+    background:linear-gradient(-120deg, #ff6a00, #edd214);
+}
+
+.color_bar3 {
+    background:linear-gradient(-120deg, #000000, #333333);
+}
+.left_container img {
+    height: 65%;
+    max-width: 90%;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+.left_container span {
+    text-align: center;
+    display: block;
+    color: #777;
+    margin-top: 1vh;
+    font-size: 2.3vh;
+}
+
+.connections .list_holder {
+    height: 80%;
+    position: relative;
+    top: 10%;
+    padding-left: 3vh;
+}
+
+.connections .list_holder article {
+    min-width: 16vh;
+}
+
+.connections .list_holder article div {
+    padding: 1vh;
+    font-size: 2.5vh;
 }

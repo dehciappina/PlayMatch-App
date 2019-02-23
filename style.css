@@ -48,7 +48,7 @@ nav {
     text-align: center;
     font-size: 5vw;
     width: 90%;
-    margin: 3vh auto 0 auto;
+    margin: 3vh auto 3vh auto;
     font-weight: 300;
 }
 
@@ -168,11 +168,15 @@ h3 {
 }
 
 h1 {
-    color:white;
+    color: #111;
     text-align: center;
-    margin: 4vh 0 2vh 0;
     font-weight: 400;
-    font-size: 3.8vh;
+    font-size: 3.2vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #ffffff;
+    padding: 1.4vh 0;
 }
 
 h1 span {
@@ -181,7 +185,11 @@ h1 span {
     opacity: 0.6;
     position: absolute;
     right: 5%;
-    transform: translateY(30%);
+    transform: translateY(20%);
+    -webkit-transform: translateY(20%);
+    -moz-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    -o-transform: translateY(20%);
 }
 
 .game_list {
@@ -209,7 +217,7 @@ h1 span {
 .list_holder {
     width: 100%;
     overflow-x: scroll;
-    padding-left: 25vw;
+    padding-left: calc(50% - 100px);
     box-sizing: border-box;
     display: flex;
 }

@@ -217,7 +217,7 @@ h1 span {
 .list_holder {
     width: 100%;
     overflow-x: scroll;
-    padding-left: calc(50% - 100px);
+    padding-left: calc(50% - 13.7vh);
     box-sizing: border-box;
     display: flex;
     margin-bottom: 6vh;

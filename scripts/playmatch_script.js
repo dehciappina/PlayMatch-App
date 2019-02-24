@@ -2,6 +2,10 @@
 setTimeout(function() {
     document.querySelector('.loading_container').style.opacity = 0;
     document.querySelector('.loading_container').style.visibility = 'hidden';
+
+    setTimeout(() => {
+        document.querySelector('.top_box > img').style.transform = 'scale(' + 1 + ')';
+    }, 300);
 }, 1600)
 
 document.querySelector('.down_bts').addEventListener('click', function() {

@@ -220,6 +220,7 @@ h1 span {
     padding-left: calc(50% - 100px);
     box-sizing: border-box;
     display: flex;
+    margin-bottom: 6vh;
 }
 
 .list_holder article {
@@ -784,20 +785,32 @@ h1 span {
 
 .connections > article {
     width: 100%;
-    height: 23.6vh;
-    margin: 5vh 0;
+    height: 14.6vh;
+    margin: 4vh 0 7vh 0;
     position: relative;
 }
 
 .right_container > div {
+    position: absolute;
+    right: 0;
+    left: 38.2%;
+    top: 5.4vh;
+    z-index: -1;
     background: #eee;
-    width: 100%;
-    height: 80%;
+    height: 50%;
     border-radius: 0 0 0 2vh;
     -webkit-border-radius: 0 0 0 2vh;
     -moz-border-radius: 0 0 0 2vh;
     -ms-border-radius: 0 0 0 2vh;
     -o-border-radius: 0 0 0 2vh;
+}
+
+.right_container > div p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 3vh;
 }
 
 .right_container > span {
@@ -826,7 +839,7 @@ h1 span {
     background:linear-gradient(-120deg, #000000, #333333);
 }
 .left_container img {
-    height: 65%;
+    height: 100%;
     max-width: 90%;
     object-fit: contain;
     margin: 0 auto;
@@ -838,8 +851,7 @@ h1 span {
     text-align: center;
     display: block;
     color: #777;
-    margin-top: 1vh;
-    font-size: 2.3vh;
+    font-size: 2vh;
 }
 
 .connections .list_holder {

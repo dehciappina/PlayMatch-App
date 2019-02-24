@@ -1,16 +1,19 @@
 
 setTimeout(function() {
-    document.querySelector('.loading_container').style.transform = "translateY(-100%)";
+    document.querySelector('.loading_container').style.opacity = 0;
+    document.querySelector('.loading_container').style.visibility = 'hidden';
 }, 1600)
 
 document.querySelector('.down_bts').addEventListener('click', function() {
 
-    document.querySelector('.loading_container').style.transform = "translateY(0)";
+    document.querySelector('.loading_container div div').style.animationIterationCount = 'infinite'
+    document.querySelector('.loading_container').style.opacity = 1;
+    document.querySelector('.loading_container').style.visibility = 'visible';
 
     setTimeout(function() {
         window.scrollTo(0, 0);
         document.location.reload()
-    }, 700);
+    }, 1000);
 })
 
 

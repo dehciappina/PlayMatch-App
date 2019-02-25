@@ -119,7 +119,7 @@ h3 {
 .top_box_playmatch {
     height: 38vh;
     background-image: url(assets/hive_bg.svg);
-    background-size: calc(100%/4);
+    background-size: calc(100%/5);
 }
 
 .top_box_profile {

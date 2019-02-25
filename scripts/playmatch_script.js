@@ -63,7 +63,8 @@ const descriptionList = [
     'Sou uma pessoa tímida até a primeira partida, depois tem que aguentar.',
     'Óculos VR: CONFERE. Montanha de jogos: CONFERE. Amigos pra jogar: CADÊ?',
     'Me chama pra tomar uma e jogar Mortal Kombat :)',
-    'Procura-se suporte pra um LoLzinho #tanque'
+    'Procura-se suporte pra um LoLzinho #tanque',
+    'Geminiano, introvertido e viciado em games desde os 11. Procuro amigos pra formar um time de Overwatch, mas todo o resto tá valendo!'
 ]
 
-document.querySelector('.prof_description').innerText = descriptionList[Math.floor(Math.random() * 10)]
+document.querySelector('.prof_description').innerText = descriptionList[Math.floor(Math.random() * 11)]

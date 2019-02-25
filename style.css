@@ -126,6 +126,11 @@ h3 {
 
 .top_box_playmatch > img {
     height: 80%;
+    transform:scale(0);
+    -webkit-transform:scale(0);
+    -moz-transform:scale(0);
+    -ms-transform:scale(0);
+    -o-transform:scale(0);
 }
 
 .top_box_profile > img {
@@ -140,11 +145,6 @@ h3 {
     margin: 0 auto;
     position: relative;
     z-index: 1;
-    transform:scale(0);
-    -webkit-transform:scale(0);
-    -moz-transform:scale(0);
-    -ms-transform:scale(0);
-    -o-transform:scale(0);
     transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
     -moz-transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
@@ -559,6 +559,14 @@ h1 span {
 
 /* PLAYMATCH */
 
+.share {
+    width: 14%;
+    height: 50%;
+    position: relative;
+    top: 25%;
+    transform: translateX(10%);
+}
+
 
 .loading_container {
     position:fixed;
@@ -811,7 +819,7 @@ h1 span {
     right: 0;
     left: 38.2%;
     top: 50%;
-    background: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 0.6);
     box-shadow: 0 1vh 2vh rgba(0,0,0,0.4);
     height: 30%;
     border-radius: 1vh 0 0 1vh;
@@ -829,6 +837,8 @@ h1 span {
     transform: translateY(-50%);
     text-align: center;
     font-size: 5vw;
+    color: #222;
+    letter-spacing: 1px;
 }
 
 .right_container > span {
@@ -907,7 +917,7 @@ h1 span {
     position: relative;
     left: 2%;
     top: 15%;
-    width: 75%;
+    width: 60%;
     height: 70%;
     background: #111;
     border-radius: 20vh;
@@ -916,7 +926,8 @@ h1 span {
 .chat_input aside p {
     color: #666;
     text-align: center;
-    font-size: 3vh;
+    font-size: 2.7vh;
+    letter-spacing: -1px;
     line-height: 5.5vh;
     font-weight: 300;
 }
@@ -938,4 +949,30 @@ h1 span {
     display: block;
     top: 27.5%;
     height: 45%;
+}
+
+
+/* CHAT */
+
+.talking_to_profile {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 4vh 0;
+    background:linear-gradient(-120deg, #483DFF, #3C0044) fixed;
+}
+
+.talking_to_profile img {
+    width: 38%;
+    z-index: 2;
+    position: relative;
+    left: 8%;
+}
+
+.talking_to_profile span {
+    position: absolute;
+    color: white;
+    font-weight: 300;
+    font-size: 4vh;
+    right: calc(20vw - 30px);
 }

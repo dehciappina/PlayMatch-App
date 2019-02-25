@@ -15,8 +15,12 @@ input:focus {
     height: 100vh;
 }
 
-.profile_body, .party_body, .loading_container, .map_body {
+.profile_body, .party_body, .loading_container {
     background:linear-gradient(-120deg, #483DFF, #3C0044) fixed;
+}
+
+.map_body {
+    background:#eee;
 }
 
 .profile_body, .playmatch_body, .connections_body {
@@ -714,7 +718,7 @@ h1 span {
 /* PARTY */
 
 
-.party_loading_container {
+.party_loading_container, .map_loading_container {
     z-index: 2;
     transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-transition:transform 1s cubic-bezier(0.4, 0, 0.2, 1);
@@ -724,21 +728,30 @@ h1 span {
     will-change:transform;
 }
 
-.party_loading_container p {
-    text-align: center;
-    color:white;
-    font-size:3.8vh;
-    font-weight: 300;
+.map_loading_container {
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+    z-index: 0;
+}
+
+.party_loading_container div, .map_loading_container div {
+    border-radius: 100%;
 }
 
 .party_loading_container div {
+    background: #CCC;
     width: 30vw;
     height: 30vw;
-    border-radius: 100%;
-    background: #CCC;
 }
 
-.party_loading_container div div {
+.map_loading_container div {
+    margin: 0 auto;
+    width: 50vw;
+    height: 50vw;
+}
+
+.party_loading_container div div, .map_loading_container div div {
     width: 70%;
     height: 70%;
     display: block;
@@ -748,11 +761,20 @@ h1 span {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    animation: rotate_div 4s linear infinite;
+    animation: rotate_div 4s linear;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
+    -webkit-animation: rotate_div 4s linear;
+}
+
+.party_loading_container div div {
+    animation-iteration-count: infinite;
+}
+
+.map_loading_container div di {
+    animation-iteration-count: 1;
 }
 
 @keyframes rotate_div {

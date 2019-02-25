@@ -824,10 +824,10 @@ h1 span {
 
 .connections > article {
     width: 100%;
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
     position: relative;
     height: 19vh;
-    box-shadow: 0 1vh 2vh #EEE;
+    background: #FAFAFA;
 }
 
 .right_container > a, .talking_to_profile > a {
@@ -859,15 +859,14 @@ h1 span {
     transform: translateY(-50%);
     font-size: 5vw;
     letter-spacing: 1px;
-    font-weight: 300;
 }
 
     .right_container > a p {
-        color: #222;
+        color:#555;
     }
 
     .talking_to_profile > a p {
-        color:#222;
+        color:#555;
     }
 
 .right_container > span {
@@ -986,9 +985,9 @@ h1 span {
 
 .talking_to_profile {
     position: sticky;
-    top: 7.5vh;
+    top: 0;
     width: 100%;
-    padding: 1vh 0;
+    padding: 2vh 0 1vh 0;
     background: #FAFAFA;
     z-index: 1;
 }
@@ -1034,7 +1033,7 @@ h1 span {
     padding: 2vh 4vh;
     box-sizing: border-box;
     display: inline-block;
-    margin-bottom: 3vw;
+    margin-bottom: 2vw;
 }
 
     .your_msg div {
@@ -1059,12 +1058,11 @@ h1 span {
 
 
 .your_msg div p, .user_msg div p {
-    font-size: 5vw;
-    font-weight: 300;
+    font-size: 4.5vw;
 }
 
 .your_msg div p {
-    color: #222;
+    color: #555;
     text-align: right;
 }
 .user_msg div p {
@@ -1075,7 +1073,7 @@ h1 span {
     text-align: center;
     width: 100%;
     display: block;
-    margin: -1.5vw 0 1.5vw 0;
+    margin: 0 0 2vw 0;
     color: #AAA;
     font-size: 2vh;
     letter-spacing: 0.4vw;

@@ -40,7 +40,7 @@ nav {
     display: flex;
     z-index: 2;
     max-width: 65vh;
-    box-shadow: 0 0vh 7vh 2vh;
+    box-shadow: 0 0vh 10vh 3.8vh;
 }
 
 .prof_description {

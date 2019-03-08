@@ -20,7 +20,7 @@ document.body.onscroll = function() {
         addBt.style.transform = 'translateX(0vh)'
         setTimeout(() => {
             reloadBt.style.transform = 'translateX(0vh)'
-        }, 300);
+        }, 100);
 
         if(window.scrollY > (document.body.offsetHeight - window.innerHeight - 100)) {
             addBtP.classList.add('add_reload_bt_show')

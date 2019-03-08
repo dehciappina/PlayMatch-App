@@ -23,8 +23,12 @@ input:focus {
     background:#eee;
 }
 
-.profile_body, .playmatch_body, .connections_body {
+.profile_body, .connections_body {
     padding-bottom: 10vh;
+}
+
+.playmatch_body {
+    padding-bottom: 45vh;
 }
 
 p, h1, h2, h3, h4, h5 {
@@ -40,7 +44,7 @@ nav {
     display: flex;
     z-index: 2;
     max-width: 65vh;
-    box-shadow: 0 0vh 10vh 3.8vh;
+    /* box-shadow: 0 0vh 10vh 3.8vh; */
 }
 
 .prof_description {
@@ -271,12 +275,6 @@ h1 span {
     background-image: url(assets/footer/footer_bar.svg);
     background-size: contain;
     transform: translateY(-90%);
-}
-
-.down_bts {
-    /* width: 38%; */
-    display: block;
-    margin: 8vh auto;
 }
 
 .editable::after, .deletable::after, .locked::after, .unlocked::after {
@@ -1074,6 +1072,114 @@ h1 span {
     color: #AAA;
     font-size: 2vh;
     letter-spacing: 0.4vw;
+}
+
+.add_bt, .reload_bt {
+    position: fixed;
+    transition:transform 0.7s ease;
+    -webkit-transition:transform 0.7s ease;
+    -moz-transition:transform 0.7s ease;
+    -ms-transition:transform 0.7s ease;
+    -o-transition:transform 0.7s ease;
+    transform:translateX(40vh);
+    -webkit-transform:translateX(40vh);
+    -moz-transform:translateX(40vh);
+    -ms-transform:translateX(40vh);
+    -o-transform:translateX(40vh);
+    will-change: transform;
+    transform-origin: bottom;
+    color:white;
+}
+
+.add_bt {
+    width: 23.6%;
+    bottom: 12vh;
+    right: 10%;
+}
+
+.add_bt p, .reload_bt p {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition:opacity 0.3s ease;
+    -webkit-transition:opacity 0.3s ease;
+    -moz-transition:opacity 0.3s ease;
+    -ms-transition:opacity 0.3s ease;
+    -o-transition:opacity 0.3s ease;
+}
+
+.add_reload_bt_show {
+    opacity:1 !important;
+    visibility: visible !important;
+}
+
+.add_bt p {
+    top: 30%;
+    right: 16vh;
+    font-size: 4vh;
+}
+
+.reload_bt p {
+    text-align: right;
+    top: 1vh;
+    right: 10vh;
+    font-size: 3vh;
+    line-height: 3vh;
+}
+
+.reload_bt {
+    width: 14.6%;
+    bottom: 28vh;
+    right: 10%;
+}
+
+.add_bt_anim {
+    animation:press_bt 0.4s ease 1;
+    -webkit-animation:press_bt 0.4s ease 1;
+}
+
+@keyframes press_bt {
+    0% {
+        transform:scale(1);
+        -webkit-transform:scale(1);
+        -moz-transform:scale(1);
+        -ms-transform:scale(1);
+        -o-transform:scale(1);
+    }
+
+    50% {
+        transform:scale(1.2);
+        -webkit-transform:scale(1.2);
+        -moz-transform:scale(1.2);
+        -ms-transform:scale(1.2);
+        -o-transform:scale(1.2);
+    }
+
+    100% {
+        transform:scale(1);
+        -webkit-transform:scale(1);
+        -moz-transform:scale(1);
+        -ms-transform:scale(1);
+        -o-transform:scale(1);
+    }
+
+}
+
+.add_bt rect, .reload_bt rect {
+    fill:#BBB;
+    transition: fill 0.3s ease;
+    -webkit-transition: fill 0.3s ease;
+    -moz-transition: fill 0.3s ease;
+    -ms-transition: fill 0.3s ease;
+    -o-transition: fill 0.3s ease;
+}
+
+.add_bt_rect_blue {
+    fill:#009BDB !important;
+}
+
+.add_bt path, .reload_bt path {
+    fill:#FFFFFF;
 }
 
 

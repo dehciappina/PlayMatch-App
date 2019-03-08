@@ -8,7 +8,47 @@ setTimeout(function() {
     }, 300);
 }, 1600)
 
-document.querySelector('.down_bts').addEventListener('click', function() {
+const addBt = document.querySelector('.add_bt')
+const addBtSvg = document.querySelector('.add_bt svg')
+const reloadBt = document.querySelector('.reload_bt')
+const reloadBtP = document.querySelector('.reload_bt p')
+const addBtBg = document.querySelector('.add_bt rect')
+const addBtP = document.querySelector('.add_bt p')
+
+document.body.onscroll = function() {
+    if(window.scrollY > (window.innerHeight / 2)) {
+        addBt.style.transform = 'translateX(0vh)'
+        setTimeout(() => {
+            reloadBt.style.transform = 'translateX(0vh)'
+        }, 300);
+
+        if(window.scrollY > (document.body.offsetHeight - window.innerHeight - 100)) {
+            addBtP.classList.add('add_reload_bt_show')
+            reloadBtP.classList.add('add_reload_bt_show')
+        } else {
+            addBtP.classList.remove('add_reload_bt_show')
+            reloadBtP.classList.remove('add_reload_bt_show')
+        }
+    } else {
+        addBt.style.transform = 'translateX(40vh)'
+        setTimeout(() => {
+            reloadBt.style.transform = 'translateX(40vh)'
+        }, 300);
+
+    }
+}
+
+addBt.addEventListener('click', function() {
+    addBtBg.classList.toggle('add_bt_rect_blue')
+
+    addBtSvg.classList.add('add_bt_anim')
+
+    setTimeout(() => {
+        addBtSvg.classList.remove('add_bt_anim')
+    }, 400);
+})
+
+reloadBt.addEventListener('click', function() {
 
     document.querySelector('.loading_container div div').style.animationIterationCount = 'infinite'
     document.querySelector('.loading_container').style.opacity = 1;

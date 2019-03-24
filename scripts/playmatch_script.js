@@ -72,7 +72,7 @@ const backgroundList = [
 document.body.style.background = backgroundList[Math.floor(Math.random() * 6)]
 
 const nameList = [
-    'Yuri', 'Alê', 'Ariel', 'Frankie', 'Alison', 'Sam', 'Charlie', 'Kim', 'Joan', 'Cacá', 'Chris', 'Ellis'
+    'Yuri', 'Alê', 'Ariel', 'Franky', 'Alison', 'Sam', 'Charlie', 'Kim', 'Joan', 'Cacá', 'Chris', 'Ellis'
 ];
 const ageList = [
     '21', '19', '17', '23', '25', '18', '27'
@@ -82,7 +82,7 @@ document.querySelector('.prof_name').innerText = nameList[Math.floor(Math.random
 
 
 const placeList = [
-    'São Paulo, SP - 15km', 'Curitiba, PR - 235km', 'Rio de Janeiro, RJ - 150km', 'Florianópolis, SC - 360km', 'Salvador, BA - 552km', 'Rio Branco, AC - 948km', 'Manaus, AM - 838km'
+    'Stellenbosch, ZA - 35km', 'Worcester, ZA - 235km', 'São Paulo, BR - 6.412km', 'Valencia, ES - 8.281km', 'Perth, AU - 8.712km', 'Ozaka, JP - 14.238km', 'Tunes, TN - 7.803km'
 ];
 
 document.querySelector('.sub_info').innerText = placeList[Math.floor(Math.random() * 6)]
@@ -94,17 +94,17 @@ const imgList = [
 document.querySelector('.top_box > img').setAttribute('src', 'assets/playmatch/' + imgList[Math.floor(Math.random() * 10)])
 
 const descriptionList = [
-    'bora dar uns headshots?',
-    'Não sou o Nathan Drake, mas tô aqui à procura de um tesouro ;)',
-    '#JogoDeFutebolNão #pls',
-    'Me chama pra jogar um MMO vai',
-    'Troco um dos meus por Watch Dogs 2 #paz',
-    'Amigos eu já tenho, o que falta é um(a) rival pra jogar Naruto UNS4',
-    'Sou uma pessoa tímida até a primeira partida, depois tem que aguentar.',
-    'Óculos VR: CONFERE. Montanha de jogos: CONFERE. Amigos pra jogar: CADÊ?',
-    'Me chama pra tomar uma e jogar Mortal Kombat :)',
-    'Procura-se suporte pra um LoLzinho #tanque',
-    'Pessoa introvertida, de Capricórnio e com vício em games desde os 11. Procuro amigues pra formar um time de Overwatch, mas todo o resto tá valendo =)'
+    'lets give some headshots?',
+    "I'm not Nathan Drake, but I'm looking for a treasure here ;)",
+    '#SayNoToSoccerGames #peace',
+    'Call me to play some MMORpg =)',
+    'Exchanging one of mine by Sekiro (PS4) ^^',
+    'Friends? Already have. Looking for a new rival on Naruto UNS4',
+    "I'm a shy person until the first match, after that you gotta hold me",
+    'Oculus VR: CHECK. Mountain of games: CHECK. Friends to play: WHERE???',
+    'Call me to drink and play some Mortal Kombat :)',
+    'Looking for LoL main support #TANK',
+    'Introvert, Capri and game addicted since 11. Looking for friends to form a overwatch team, but opened for possibilities =)'
 ]
 
 document.querySelector('.prof_description').innerText = descriptionList[Math.floor(Math.random() * 11)]
